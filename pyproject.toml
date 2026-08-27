@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiny-sliding-window"
+version = "1.0.0"
+description = "Zero-dependency sliding window rate limiter with analytics"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "Hussain Al-Saibai", email = "hussain.alsaibai@gmail.com"}]
+keywords = ["rate-limiting", "rate-limiter", "sliding-window", "throttle", "ai", "agent", "mcp"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Topic :: System :: Networking",
+]
+scripts = {"tiny-sliding-window" = "tiny_sliding_window:main"}
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+py-modules = ["tiny_sliding_window"]
