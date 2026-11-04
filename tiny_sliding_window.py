@@ -23,6 +23,7 @@ Usage:
     # Analytics
     print(limiter.stats())   # {hits, misses, allows, denies, hit_rate, ...}
 """
+from __future__ import annotations
 
 import threading
 import time
